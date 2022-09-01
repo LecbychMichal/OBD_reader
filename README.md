@@ -27,7 +27,7 @@ python3 -m elm
 ```
 python3 consumer.py
 ```
-#### Run Kafka producer in new terminal with env
+#### Run Kafka producer in new terminal with env - new port from emulator
 ```
 python3 producer.py --port /dev/pts/9 --limit 5 --pause 0
 ```
