@@ -75,11 +75,12 @@ if __name__ == '__main__':
     pause - time between each query
     """
     parser = argparse.ArgumentParser()
+    parser.add_argument('--port', type=str, default="/dev/pts/8")
     parser.add_argument('--limit', type=int, default="5")
     parser.add_argument('--pause', type=float, default="0.5")
     args = parser.parse_args()
     
-    connection = obd.OBD('/dev/pts/3', timeout=100)
+    connection = obd.OBD(args.port, timeout=100)
     speed = obd.commands.SPEED
     voltage = obd.commands.ELM_VOLTAGE
     dtc = obd.commands.GET_DTC
