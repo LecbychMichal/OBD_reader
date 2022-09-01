@@ -3,7 +3,6 @@ docutils==0.19
 ELM327-emulator==3.0.0
 lockfile==0.12.2
 obd==0.7.1
-Pint==0.19.2
 pyserial==3.5
 python-daemon==2.3.1
 PyYAML==6.0
